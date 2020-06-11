@@ -93,7 +93,7 @@ app.post("/failure", (req, res) => {
 })
 
 //start up our server and listen to it in port 3000
-app.listen(process.env.port || 3000, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`DevArtist Server has started`)
 })
 
