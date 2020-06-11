@@ -1,0 +1,56 @@
+.form {
+    width: 100%;
+    min-height: 108rem;
+    position: relative;
+    background-color: $color-dark;
+}
+
+.firstName {
+    position: absolute;
+    @include input-bg;
+    left: 40.4rem;
+    top: 54rem;
+}
+
+
+.lastName {
+    position: absolute;
+    @include input-bg;
+    left: 40.4rem;
+    top: 65.8rem;
+}
+
+.email {
+    position: absolute;
+    @include input-bg;
+    left: 40.4rem;
+    top: 77.6rem;
+}
+
+label {
+    display: none;
+    color: $color-white;
+    @include txt-sm;
+}
+
+input {
+    @include input-bg;
+    border: none;
+    border-bottom: 5px solid $color-white;
+    background-color: transparent;
+    @include txt-mid;
+
+    color: $color-primary;
+
+    &:focus {
+        outline: none;
+        color: $color-white;
+        background-color: transparent;
+        border-bottom: 5px solid $valid;
+
+    }
+
+    &:focus:invalid {
+        border-bottom: 5px solid $invalid;
+    }
+}
