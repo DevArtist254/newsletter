@@ -1,0 +1,18 @@
+h2 {
+    position: absolute;
+    width: 73.1rem;
+    height: 3.5rem;
+    left: 0px;
+    top: 46.2rem;
+
+    @include txt-sm;
+
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+
+    color: $color-primary;
+
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}

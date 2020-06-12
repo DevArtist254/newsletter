@@ -1,0 +1,13 @@
+.txt-bg {
+    position: absolute;
+    width: 77.6rem;
+    height: 35.5rem;
+    left: 40.4rem;
+    top: 11.3rem;
+
+    @include txt-bg;
+
+    letter-spacing: 0.04em;
+
+    color: $color-primary;
+}
