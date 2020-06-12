@@ -1,10 +1,14 @@
-@import "abstracts/mixin";
+@import "abstracts/mixin.scss";
 @import "abstracts/variables";
 
-@import "base/animations";
-@import "base/base";
+@import "base/animations.scss";
+@import "base/base.scss";
 
-@import "components/btn";
-@import "components/form";
+@import "components/btn.scss";
+@import "components/form.scss";
 
-@import "typography/text";
+@import "typography/bg.scss";
+@import "typography/bg-sm.scss";
+@import "typography/copyrights.scss";
+@import "typography/highlight.scss";
+@import "typography/jumbo.scss";

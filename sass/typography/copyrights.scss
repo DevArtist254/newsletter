@@ -4,10 +4,18 @@
     height: 3rem;
     left: 12.2rem;
     top: 104.15rem;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2.5rem;
-    line-height: 3rem;
+
+    @include copyRightTxt;
+
     color: $color-primary;
+
+    @include respond(phone) {}
+
+    @include respond(tab-port) {}
+
+    @include respond(tab-land) {}
+
+    @include respond(HD-screen) {}
+
+    @include respond(fourK-screen) {}
 }

@@ -1,18 +1,100 @@
-h2 {
+.txt-bg-sm {
+
     position: absolute;
-    width: 73.1rem;
-    height: 3.5rem;
-    left: 0px;
-    top: 46.2rem;
+    width: 80.5rem;
+    height: 3.8rem;
+    left: 4.2rem;
+    top: 91.3rem;
 
-    @include txt-sm;
+    font-size: 3rem;
+    line-height: 3.8rem;
 
-    display: flex;
-    align-items: center;
-    text-decoration-line: underline;
+    @include bgFormatSm;
 
     color: $color-primary;
 
     transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
+
+    @include respond(phone) {
+        position: absolute;
+        width: 42.5rem;
+        height: 9.6rem;
+        left: -26.6rem;
+        top: 80.3rem;
+
+        font-size: 3rem;
+        line-height: 3.7rem;
+        @include bgFormatSm;
+
+        color: $color-primary;
+    }
+
+    @include respond(tab-port) {
+        position: absolute;
+        width: 77.6rem;
+        height: 12.6rem;
+        left: -26.6rem;
+        top: 113rem;
+
+        font-size: 4rem;
+        line-height: 4.9px;
+
+        @include bgFormatSm;
+
+        color: $color-primary;
+    }
+
+    @include respond(tab-land) {
+        position: absolute;
+        width: 80.5rem;
+        height: 3.8rem;
+        left: 4.2rem;
+        top: 91.3rem;
+
+
+        font-size: 3rem;
+        line-height: 3.8rem;
+        /* identical to box height */
+
+        @include bgFormatSm;
+
+        color: $color-primary;
+
+        transform: rotate(-90deg);
+    }
+
+    @include respond(HD-screen) {
+        position: absolute;
+        width: 73.1rem;
+        height: 3.5rem;
+        left: 0px;
+        top: 46.2rem;
+
+        font-size: 3rem;
+        line-height: 3.5rem;
+
+        @include bgFormatSm;
+
+        color: $color-primary;
+
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    }
+
+    @include respond(fourK-screen) {
+        position: absolute;
+        width: 123.4rem;
+        height: 19.2rem;
+        left: 9.6rem;
+        top: 82rem;
+
+        font-size: 7.5rem;
+        line-height: 9.1rem;
+
+        @include bgFormatSm;
+
+        color: $color-primary;
+
+        transform: rotate(0deg);
+    }
 }

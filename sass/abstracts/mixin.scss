@@ -8,6 +8,11 @@
   height: 6.8rem;
 }
 
+@mixin input-sm {
+  width: 38.6rem;
+  height: 6.8rem;
+}
+
 @mixin txt-bg {
   font-family: Montserrat;
   font-style: italic;
@@ -28,50 +33,80 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 3rem;
-  line-height: 3.5rem;
+
+}
+
+@mixin copyRightTxt {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+@mixin bgFormatSm {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+}
+
+@mixin bgFormat {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 300;
 }
 
 /*
 Media Query Manager
 
-Breakpoints : Screens         : nickname
+Breakpoints :             Screens                                 : nickname
 
-0-600 px    : phone           : phone
-600-900 px  : tablet-portrait : tab-port
-900-1200 px : tablet-landscape: tab-land
-1200-1800 px: normal becoz its desktop first method
-1800px +    : Big Monitor     : big-screen
+0-425 px    :               phone                                    : phone
+425-770 px  :         tablet-portrait                           : tab-port
+770-1024 px : laptop small or tablet landscape     : tab-land
+1024-1440 px:          Any HD screen                       : HD-screen
+1440-2560 px :            4k-screen                             : 4k-screen
 
 1em = 16px
 */
 
 @mixin respond($breakpoint) {
 
+
   //phone breakpoint
   @if $breakpoint==phone {
-    @media (max-width: 37.5em) {
+    @media (min-width: 26.56em) {
       @content;
     }
   }
 
   //tab-port breakpoint
   @if $breakpoint==tab-port {
-    @media (max-width: 56.25em) {
+    @media (min-width: 48.125em) {
       @content;
     }
   }
 
   //tab-land breakpoint
   @if $breakpoint==tab-land {
-    @media (max-width: 75em) {
+    @media (min-width: 64em) {
+      @content;
+    }
+  }
+
+  //tab-land breakpoint
+  @if $breakpoint==HD-screen {
+    @media (min-width: 90em) {
       @content;
     }
   }
 
   //big screen breakpoint
-  @if $breakpoint==big-screen {
-    @media (min-width: 112.5em) {
+  @if $breakpoint==fourK-screen {
+    @media (min-width: 160em) {
       @content;
     }
   }

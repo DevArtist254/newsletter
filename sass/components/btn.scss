@@ -9,4 +9,14 @@
     @include txt-mid;
 
     @include btn-bg-box;
+
+    @include respond(phone) {}
+
+    @include respond(tab-port) {}
+
+    @include respond(tab-land) {}
+
+    @include respond(HD-screen) {}
+
+    @include respond(fourK-screen) {}
 }

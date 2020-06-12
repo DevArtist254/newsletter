@@ -1,4 +1,5 @@
 .txt-bg {
+
     position: absolute;
     width: 77.6rem;
     height: 35.5rem;
@@ -10,4 +11,92 @@
     letter-spacing: 0.04em;
 
     color: $color-primary;
+
+    @include respond(phone) {
+        position: absolute;
+        width: 110.5rem;
+        height: 45.8rem;
+        left: 0px;
+        top: 4.5rem;
+
+        font-family: Montserrat;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 13.4rem;
+        line-height: 115.9%;
+        /* or 74px */
+
+        letter-spacing: -0.07em;
+
+        color: $color-primary;
+    }
+
+    @include respond(tab-port) {
+        position: absolute;
+        width: 776px;
+        height: 355px;
+        left: -6px;
+        top: 103px;
+
+        @include bgFormat;
+
+        font-size: 9.5rem;
+        line-height: 128.9%;
+        /* or 122px */
+
+        letter-spacing: 0.04em;
+
+        color: $color-primary;
+    }
+
+    @include respond(tab-land) {
+        position: absolute;
+        width: 77.6rem;
+        height: 35.5rem;
+        left: 12.4rem;
+        top: 10.8rem;
+
+        @include bgFormat;
+
+        font-size: 16.4rem;
+        line-height: 105.9%;
+        /* or 129px */
+
+        letter-spacing: 0.04em;
+
+        color: $color-primary;
+    }
+
+    @include respond(HD-screen) {
+        position: absolute;
+        width: 77.6rem;
+        height: 35.5rem;
+        left: 40.4rem;
+        top: 11.3rem;
+
+        @include txt-bg;
+
+        letter-spacing: 0.04em;
+
+        color: $color-primary;
+    }
+
+    @include respond(fourK-screen) {
+
+        position: absolute;
+        width: 125.4rem;
+        height: 57.8rem;
+        left: 8.6rem;
+        top: 17.1rem;
+
+        @include bgFormat;
+
+        font-size: 15rem;
+        line-height: 128.9%;
+        /* or 202px */
+
+        letter-spacing: 0.08em;
+
+        color: $color-primary;
+    }
 }

@@ -10,6 +10,16 @@
     @include input-bg;
     left: 40.4rem;
     top: 54rem;
+
+    @include respond(phone) {}
+
+    @include respond(tab-port) {}
+
+    @include respond(tab-land) {}
+
+    @include respond(HD-screen) {}
+
+    @include respond(fourK-screen) {}
 }
 
 
@@ -18,6 +28,16 @@
     @include input-bg;
     left: 40.4rem;
     top: 65.8rem;
+
+    @include respond(phone) {}
+
+    @include respond(tab-port) {}
+
+    @include respond(tab-land) {}
+
+    @include respond(HD-screen) {}
+
+    @include respond(fourK-screen) {}
 }
 
 .email {
@@ -25,12 +45,20 @@
     @include input-bg;
     left: 40.4rem;
     top: 77.6rem;
+
+    @include respond(phone) {}
+
+    @include respond(tab-port) {}
+
+    @include respond(tab-land) {}
+
+    @include respond(HD-screen) {}
+
+    @include respond(fourK-screen) {}
 }
 
 label {
     display: none;
-    color: $color-white;
-    @include txt-sm;
 }
 
 input {
@@ -53,4 +81,14 @@ input {
     &:focus:invalid {
         border-bottom: 5px solid $invalid;
     }
+
+    @include respond(phone) {}
+
+    @include respond(tab-port) {}
+
+    @include respond(tab-land) {}
+
+    @include respond(HD-screen) {}
+
+    @include respond(fourK-screen) {}
 }
