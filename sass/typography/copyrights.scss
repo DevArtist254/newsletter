@@ -2,8 +2,8 @@
     position: absolute;
     width: 34rem;
     height: 3rem;
-    left: 12.2rem;
-    top: 104.15rem;
+    left: 1.2rem;
+    top: 76.15rem;
 
     @include copyRightTxt;
 
@@ -18,4 +18,5 @@
     @include respond(HD-screen) {}
 
     @include respond(fourK-screen) {}
+
 }

@@ -2,9 +2,9 @@
 
     position: absolute;
     width: 80.5rem;
-    height: 3.8rem;
-    left: 4.2rem;
-    top: 91.3rem;
+    height: 7.8rem;
+    left: -1.8rem;
+    top: 30.3rem;
 
     font-size: 3rem;
     line-height: 3.8rem;
@@ -14,7 +14,8 @@
     color: $color-primary;
 
     transform: rotate(-90deg);
-
+    /*
+    
     @include respond(phone) {
         position: absolute;
         width: 42.5rem;
@@ -54,7 +55,6 @@
 
         font-size: 3rem;
         line-height: 3.8rem;
-        /* identical to box height */
 
         @include bgFormatSm;
 
@@ -96,5 +96,7 @@
         color: $color-primary;
 
         transform: rotate(0deg);
-    }
+    }     
+        */
+
 }

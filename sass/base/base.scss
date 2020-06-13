@@ -14,3 +14,42 @@ body {
     position: relative;
     background-color: $color-dark;
 }
+
+.container {
+    position: absolute;
+    left: 40.4rem;
+    top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+
+    &__heading {
+        width: 77.6rem;
+        height: 35.5rem;
+    }
+
+    &__form {
+        width: 77.6rem;
+        min-height: 30rem;
+    }
+}
+
+.Cform {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__firstName {
+        margin-top: 1.8rem;
+    }
+
+    &__lastName {
+        margin-top: 1.8rem;
+    }
+
+    &__email {
+        margin-top: 1.8rem;
+    }
+}

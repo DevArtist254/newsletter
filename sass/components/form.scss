@@ -1,67 +1,9 @@
-.form {
-    width: 100%;
-    min-height: 108rem;
-    position: relative;
-    background-color: $color-dark;
-}
-
-.firstName {
-    position: absolute;
-    @include input-bg;
-    left: 40.4rem;
-    top: 54rem;
-
-    @include respond(phone) {}
-
-    @include respond(tab-port) {}
-
-    @include respond(tab-land) {}
-
-    @include respond(HD-screen) {}
-
-    @include respond(fourK-screen) {}
-}
-
-
-.lastName {
-    position: absolute;
-    @include input-bg;
-    left: 40.4rem;
-    top: 65.8rem;
-
-    @include respond(phone) {}
-
-    @include respond(tab-port) {}
-
-    @include respond(tab-land) {}
-
-    @include respond(HD-screen) {}
-
-    @include respond(fourK-screen) {}
-}
-
-.email {
-    position: absolute;
-    @include input-bg;
-    left: 40.4rem;
-    top: 77.6rem;
-
-    @include respond(phone) {}
-
-    @include respond(tab-port) {}
-
-    @include respond(tab-land) {}
-
-    @include respond(HD-screen) {}
-
-    @include respond(fourK-screen) {}
-}
-
 label {
     display: none;
 }
 
 input {
+
     @include input-bg;
     border: none;
     border-bottom: 5px solid $color-white;
